@@ -1,0 +1,366 @@
+2026-10-16 23:43:14,488 - INFO - Ingesting begin_inventory.csv in db
+2026-10-16 23:43:19,356 - INFO - Ingesting end_inventory.csv in db
+2026-10-16 23:43:25,370 - INFO - Ingesting purchases.csv in db
+2026-10-16 23:43:33,791 - INFO - Ingesting purchase_prices.csv in db
+2026-10-16 23:43:35,044 - INFO - Ingesting sales.csv in db
+2026-10-16 23:43:41,910 - INFO - Ingesting vendor_invoice.csv in db
+2026-10-16 23:43:42,018 - INFO - ----------Ingestion Complete----------
+2026-10-16 23:43:42,019 - INFO - 
+Total Time Taken: 0.47917101383209226 minutes
+2026-10-19 00:02:47,291 - INFO - Creating Vendor Summary Table...
+2026-10-19 00:02:49,381 - INFO - Summary preview:
+   VendorNumber                   VendorName  Brand              Description  \
+0          3960  DIAGEO NORTH AMERICA INC      4261   Capt Morgan Spiced Rum   
+1          1128  BROWN-FORMAN CORP             1233  Jack Daniels No 7 Black   
+2          3960  DIAGEO NORTH AMERICA INC      3545          Ketel One Vodka   
+3          4425        MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+4          3960  DIAGEO NORTH AMERICA INC      3102        Smirnoff Traveler   
+
+   PurchasePrice  ActualPrice Volume  TotalPurchaseQuantity  \
+0          16.17        22.99   1750                  34234   
+1          26.27        36.99   1750                  18349   
+2          21.89        29.99   1750                  19421   
+3          23.19        28.99   1750                  15530   
+4          12.94        17.99   1750                  23593   
+
+   TotalPurchaseDollars  TotalSalesQuantity  TotalSalesDollars  \
+0             553563.78              6040.0          132819.60   
+1             482028.23              2632.0           94725.68   
+2             425125.69              3492.0          105105.08   
+3             360140.70              2393.0           71766.07   
+4             305293.42              2039.0           36681.61   
+
+   TotalSalesPrice  TotalExciseTax  FreightCost  
+0         13567.83        11098.10    257032.07  
+1         19578.56         4835.83     68601.68  
+2         15904.73         6416.21    257032.07  
+3         15714.76         4396.68    144929.24  
+4          7285.95         3746.38    257032.07  
+2026-10-19 00:02:49,405 - INFO - Cleaning Data...
+2026-10-19 00:02:49,459 - INFO - Cleaned data preview:
+   VendorNumber                VendorName  Brand              Description  \
+0          3960  DIAGEO NORTH AMERICA INC   4261   Capt Morgan Spiced Rum   
+1          1128         BROWN-FORMAN CORP   1233  Jack Daniels No 7 Black   
+2          3960  DIAGEO NORTH AMERICA INC   3545          Ketel One Vodka   
+3          4425     MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+4          3960  DIAGEO NORTH AMERICA INC   3102        Smirnoff Traveler   
+
+   PurchasePrice  ActualPrice  Volume  TotalPurchaseQuantity  \
+0          16.17        22.99    1750                  34234   
+1          26.27        36.99    1750                  18349   
+2          21.89        29.99    1750                  19421   
+3          23.19        28.99    1750                  15530   
+4          12.94        17.99    1750                  23593   
+
+   TotalPurchaseDollars  TotalSalesQuantity  TotalSalesDollars  \
+0             553563.78              6040.0          132819.60   
+1             482028.23              2632.0           94725.68   
+2             425125.69              3492.0          105105.08   
+3             360140.70              2393.0           71766.07   
+4             305293.42              2039.0           36681.61   
+
+   TotalSalesPrice  TotalExciseTax  FreightCost  GrossProfit  ProfitMargin  \
+0         13567.83        11098.10    257032.07   -420744.18   -316.778683   
+1         19578.56         4835.83     68601.68   -387302.55   -408.867532   
+2         15904.73         6416.21    257032.07   -320020.61   -304.476825   
+3         15714.76         4396.68    144929.24   -288374.63   -401.825863   
+4          7285.95         3746.38    257032.07   -268611.81   -732.279227   
+
+   StockTurnover  SalestoPurchaseRatio   SummaryGeneratedAt  
+0       0.176433              0.239935  2026-10-19 00:02:49  
+1       0.143441              0.196515  2026-10-19 00:02:49  
+2       0.179805              0.247233  2026-10-19 00:02:49  
+3       0.154089              0.199272  2026-10-19 00:02:49  
+4       0.086424              0.120152  2026-10-19 00:02:49  
+2026-10-19 00:02:49,468 - INFO - Ingesting data...
+2026-10-19 00:02:49,616 - INFO - Completed successfully.
+2026-10-19 00:02:54,634 - INFO - Creating Vendor Summary Table...
+2026-10-19 00:02:56,587 - INFO - Summary preview:
+   VendorNumber                   VendorName  Brand              Description  \
+0          3960  DIAGEO NORTH AMERICA INC      4261   Capt Morgan Spiced Rum   
+1          1128  BROWN-FORMAN CORP             1233  Jack Daniels No 7 Black   
+2          3960  DIAGEO NORTH AMERICA INC      3545          Ketel One Vodka   
+3          4425        MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+4          3960  DIAGEO NORTH AMERICA INC      3102        Smirnoff Traveler   
+
+   PurchasePrice  ActualPrice Volume  TotalPurchaseQuantity  \
+0          16.17        22.99   1750                  34234   
+1          26.27        36.99   1750                  18349   
+2          21.89        29.99   1750                  19421   
+3          23.19        28.99   1750                  15530   
+4          12.94        17.99   1750                  23593   
+
+   TotalPurchaseDollars  TotalSalesQuantity  TotalSalesDollars  \
+0             553563.78              6040.0          132819.60   
+1             482028.23              2632.0           94725.68   
+2             425125.69              3492.0          105105.08   
+3             360140.70              2393.0           71766.07   
+4             305293.42              2039.0           36681.61   
+
+   TotalSalesPrice  TotalExciseTax  FreightCost  
+0         13567.83        11098.10    257032.07  
+1         19578.56         4835.83     68601.68  
+2         15904.73         6416.21    257032.07  
+3         15714.76         4396.68    144929.24  
+4          7285.95         3746.38    257032.07  
+2026-10-19 00:02:56,596 - INFO - Cleaning Data...
+2026-10-19 00:02:56,615 - INFO - Cleaned data preview:
+   VendorNumber                VendorName  Brand              Description  \
+0          3960  DIAGEO NORTH AMERICA INC   4261   Capt Morgan Spiced Rum   
+1          1128         BROWN-FORMAN CORP   1233  Jack Daniels No 7 Black   
+2          3960  DIAGEO NORTH AMERICA INC   3545          Ketel One Vodka   
+3          4425     MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+4          3960  DIAGEO NORTH AMERICA INC   3102        Smirnoff Traveler   
+
+   PurchasePrice  ActualPrice  Volume  TotalPurchaseQuantity  \
+0          16.17        22.99    1750                  34234   
+1          26.27        36.99    1750                  18349   
+2          21.89        29.99    1750                  19421   
+3          23.19        28.99    1750                  15530   
+4          12.94        17.99    1750                  23593   
+
+   TotalPurchaseDollars  TotalSalesQuantity  TotalSalesDollars  \
+0             553563.78              6040.0          132819.60   
+1             482028.23              2632.0           94725.68   
+2             425125.69              3492.0          105105.08   
+3             360140.70              2393.0           71766.07   
+4             305293.42              2039.0           36681.61   
+
+   TotalSalesPrice  TotalExciseTax  FreightCost  GrossProfit  ProfitMargin  \
+0         13567.83        11098.10    257032.07   -420744.18   -316.778683   
+1         19578.56         4835.83     68601.68   -387302.55   -408.867532   
+2         15904.73         6416.21    257032.07   -320020.61   -304.476825   
+3         15714.76         4396.68    144929.24   -288374.63   -401.825863   
+4          7285.95         3746.38    257032.07   -268611.81   -732.279227   
+
+   StockTurnover  SalestoPurchaseRatio   SummaryGeneratedAt  
+0       0.176433              0.239935  2026-10-19 00:02:56  
+1       0.143441              0.196515  2026-10-19 00:02:56  
+2       0.179805              0.247233  2026-10-19 00:02:56  
+3       0.154089              0.199272  2026-10-19 00:02:56  
+4       0.086424              0.120152  2026-10-19 00:02:56  
+2026-10-19 00:02:56,626 - INFO - Ingesting data...
+2026-10-19 00:02:56,695 - INFO - Completed successfully.
+2026-10-19 00:10:58,340 - DEBUG - matplotlib data path: C:\Users\mayur\AppData\Local\Programs\Python\Python313\Lib\site-packages\matplotlib\mpl-data
+2026-10-19 00:10:58,380 - DEBUG - CONFIGDIR=C:\Users\mayur\.matplotlib
+2026-10-19 00:10:58,568 - DEBUG - interactive is False
+2026-10-19 00:10:58,568 - DEBUG - platform is win32
+2026-10-19 00:10:58,654 - DEBUG - CACHEDIR=C:\Users\mayur\.matplotlib
+2026-10-19 00:10:58,675 - DEBUG - Using fontManager instance from C:\Users\mayur\.matplotlib\fontlist-v390.json
+2026-10-19 23:33:50,518 - INFO - Creating Vendor Summary Table...
+2026-10-19 23:33:52,735 - INFO - Summary preview:
+   VendorNumber                   VendorName  Brand              Description  \
+0          3960  DIAGEO NORTH AMERICA INC      4261   Capt Morgan Spiced Rum   
+1          1128  BROWN-FORMAN CORP             1233  Jack Daniels No 7 Black   
+2          3960  DIAGEO NORTH AMERICA INC      3545          Ketel One Vodka   
+3          4425        MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+4          3960  DIAGEO NORTH AMERICA INC      3102        Smirnoff Traveler   
+
+   PurchasePrice  ActualPrice Volume  TotalPurchaseQuantity  \
+0          16.17        22.99   1750                  34234   
+1          26.27        36.99   1750                  18349   
+2          21.89        29.99   1750                  19421   
+3          23.19        28.99   1750                  15530   
+4          12.94        17.99   1750                  23593   
+
+   TotalPurchaseDollars  TotalSalesQuantity  TotalSalesDollars  \
+0             553563.78              6040.0          132819.60   
+1             482028.23              2632.0           94725.68   
+2             425125.69              3492.0          105105.08   
+3             360140.70              2393.0           71766.07   
+4             305293.42              2039.0           36681.61   
+
+   TotalSalesPrice  TotalExciseTax  FreightCost  
+0         13567.83        11098.10    257032.07  
+1         19578.56         4835.83     68601.68  
+2         15904.73         6416.21    257032.07  
+3         15714.76         4396.68    144929.24  
+4          7285.95         3746.38    257032.07  
+2026-10-19 23:33:52,744 - INFO - Cleaning Data...
+2026-10-19 23:33:52,781 - INFO - Cleaned data preview:
+   VendorNumber                VendorName  Brand              Description  \
+0          3960  DIAGEO NORTH AMERICA INC   4261   Capt Morgan Spiced Rum   
+1          1128         BROWN-FORMAN CORP   1233  Jack Daniels No 7 Black   
+2          3960  DIAGEO NORTH AMERICA INC   3545          Ketel One Vodka   
+3          4425     MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+4          3960  DIAGEO NORTH AMERICA INC   3102        Smirnoff Traveler   
+
+   PurchasePrice  ActualPrice  Volume  TotalPurchaseQuantity  \
+0          16.17        22.99    1750                  34234   
+1          26.27        36.99    1750                  18349   
+2          21.89        29.99    1750                  19421   
+3          23.19        28.99    1750                  15530   
+4          12.94        17.99    1750                  23593   
+
+   TotalPurchaseDollars  TotalSalesQuantity  TotalSalesDollars  \
+0             553563.78              6040.0          132819.60   
+1             482028.23              2632.0           94725.68   
+2             425125.69              3492.0          105105.08   
+3             360140.70              2393.0           71766.07   
+4             305293.42              2039.0           36681.61   
+
+   TotalSalesPrice  TotalExciseTax  FreightCost  GrossProfit  ProfitMargin  \
+0         13567.83        11098.10    257032.07   -420744.18   -316.778683   
+1         19578.56         4835.83     68601.68   -387302.55   -408.867532   
+2         15904.73         6416.21    257032.07   -320020.61   -304.476825   
+3         15714.76         4396.68    144929.24   -288374.63   -401.825863   
+4          7285.95         3746.38    257032.07   -268611.81   -732.279227   
+
+   StockTurnover  SalestoPurchaseRatio   SummaryGeneratedAt  
+0       0.176433              0.239935  2026-10-19 23:33:52  
+1       0.143441              0.196515  2026-10-19 23:33:52  
+2       0.179805              0.247233  2026-10-19 23:33:52  
+3       0.154089              0.199272  2026-10-19 23:33:52  
+4       0.086424              0.120152  2026-10-19 23:33:52  
+2026-10-19 23:33:52,792 - INFO - Ingesting data...
+2026-10-19 23:33:53,001 - INFO - Completed successfully.
+2026-10-20 14:32:46,799 - INFO - Creating Vendor Summary Table...
+2026-10-20 14:32:49,246 - INFO - Summary preview:
+   VendorNumber                   VendorName  Brand              Description  \
+0          3960  DIAGEO NORTH AMERICA INC      4261   Capt Morgan Spiced Rum   
+1          1128  BROWN-FORMAN CORP             1233  Jack Daniels No 7 Black   
+2          3960  DIAGEO NORTH AMERICA INC      3545          Ketel One Vodka   
+3          4425        MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+4          3960  DIAGEO NORTH AMERICA INC      3102        Smirnoff Traveler   
+
+   PurchasePrice  ActualPrice Volume  TotalPurchaseQuantity  \
+0          16.17        22.99   1750                  34234   
+1          26.27        36.99   1750                  18349   
+2          21.89        29.99   1750                  19421   
+3          23.19        28.99   1750                  15530   
+4          12.94        17.99   1750                  23593   
+
+   TotalPurchaseDollars  TotalSalesQuantity  TotalSalesDollars  \
+0             553563.78              6040.0          132819.60   
+1             482028.23              2632.0           94725.68   
+2             425125.69              3492.0          105105.08   
+3             360140.70              2393.0           71766.07   
+4             305293.42              2039.0           36681.61   
+
+   TotalSalesPrice  TotalExciseTax  FreightCost  
+0         13567.83        11098.10    257032.07  
+1         19578.56         4835.83     68601.68  
+2         15904.73         6416.21    257032.07  
+3         15714.76         4396.68    144929.24  
+4          7285.95         3746.38    257032.07  
+2026-10-20 14:32:49,255 - INFO - Cleaning Data...
+2026-10-20 14:32:49,296 - INFO - Cleaned data preview:
+   VendorNumber                VendorName  Brand              Description  \
+0          3960  DIAGEO NORTH AMERICA INC   4261   Capt Morgan Spiced Rum   
+1          1128         BROWN-FORMAN CORP   1233  Jack Daniels No 7 Black   
+2          3960  DIAGEO NORTH AMERICA INC   3545          Ketel One Vodka   
+3          4425     MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+4          3960  DIAGEO NORTH AMERICA INC   3102        Smirnoff Traveler   
+
+   PurchasePrice  ActualPrice  Volume  TotalPurchaseQuantity  \
+0          16.17        22.99    1750                  34234   
+1          26.27        36.99    1750                  18349   
+2          21.89        29.99    1750                  19421   
+3          23.19        28.99    1750                  15530   
+4          12.94        17.99    1750                  23593   
+
+   TotalPurchaseDollars  TotalSalesQuantity  TotalSalesDollars  \
+0             553563.78              6040.0          132819.60   
+1             482028.23              2632.0           94725.68   
+2             425125.69              3492.0          105105.08   
+3             360140.70              2393.0           71766.07   
+4             305293.42              2039.0           36681.61   
+
+   TotalSalesPrice  TotalExciseTax  FreightCost  GrossProfit  ProfitMargin  \
+0         13567.83        11098.10    257032.07   -420744.18   -316.778683   
+1         19578.56         4835.83     68601.68   -387302.55   -408.867532   
+2         15904.73         6416.21    257032.07   -320020.61   -304.476825   
+3         15714.76         4396.68    144929.24   -288374.63   -401.825863   
+4          7285.95         3746.38    257032.07   -268611.81   -732.279227   
+
+   StockTurnover  SalestoPurchaseRatio   SummaryGeneratedAt  
+0       0.176433              0.239935  2026-10-20 14:32:49  
+1       0.143441              0.196515  2026-10-20 14:32:49  
+2       0.179805              0.247233  2026-10-20 14:32:49  
+3       0.154089              0.199272  2026-10-20 14:32:49  
+4       0.086424              0.120152  2026-10-20 14:32:49  
+2026-10-20 14:32:49,307 - INFO - Ingesting data...
+2026-10-20 14:32:49,401 - INFO - Completed successfully.
+2026-10-20 23:57:03,642 - DEBUG - Using selector: SelectSelector
+2026-10-20 23:57:03,707 - ERROR - No such comm target registered: jupyter.widget.control
+2026-10-20 23:57:03,716 - WARNING - No such comm: 493a235b-fde8-4f5e-91a2-ff21082180ae
+2026-10-20 23:57:03,718 - DEBUG - Current comms: []
+2026-11-14 16:35:55,202 - INFO - Creating Vendor Summary Table...
+2026-11-14 16:35:57,521 - INFO - Summary preview:
+   VendorNumber                   VendorName  Brand              Description  \
+0          3960  DIAGEO NORTH AMERICA INC      4261   Capt Morgan Spiced Rum   
+1          1128  BROWN-FORMAN CORP             1233  Jack Daniels No 7 Black   
+2          3960  DIAGEO NORTH AMERICA INC      3545          Ketel One Vodka   
+3          4425        MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+4          3960  DIAGEO NORTH AMERICA INC      3102        Smirnoff Traveler   
+
+   PurchasePrice  ActualPrice Volume  TotalPurchaseQuantity  \
+0          16.17        22.99   1750                  34234   
+1          26.27        36.99   1750                  18349   
+2          21.89        29.99   1750                  19421   
+3          23.19        28.99   1750                  15530   
+4          12.94        17.99   1750                  23593   
+
+   TotalPurchaseDollars  TotalSalesQuantity  TotalSalesDollars  \
+0             553563.78              6040.0          132819.60   
+1             482028.23              2632.0           94725.68   
+2             425125.69              3492.0          105105.08   
+3             360140.70              2393.0           71766.07   
+4             305293.42              2039.0           36681.61   
+
+   TotalSalesPrice  TotalExciseTax  FreightCost  
+0         13567.83        11098.10    257032.07  
+1         19578.56         4835.83     68601.68  
+2         15904.73         6416.21    257032.07  
+3         15714.76         4396.68    144929.24  
+4          7285.95         3746.38    257032.07  
+2026-11-14 16:35:57,530 - INFO - Cleaning Data...
+2026-11-14 16:35:57,558 - INFO - Cleaned data preview:
+   VendorNumber                VendorName  Brand              Description  \
+0          3960  DIAGEO NORTH AMERICA INC   4261   Capt Morgan Spiced Rum   
+1          1128         BROWN-FORMAN CORP   1233  Jack Daniels No 7 Black   
+2          3960  DIAGEO NORTH AMERICA INC   3545          Ketel One Vodka   
+3          4425     MARTIGNETTI COMPANIES   3405    Tito's Handmade Vodka   
+4          3960  DIAGEO NORTH AMERICA INC   3102        Smirnoff Traveler   
+
+   PurchasePrice  ActualPrice  Volume  TotalPurchaseQuantity  \
+0          16.17        22.99    1750                  34234   
+1          26.27        36.99    1750                  18349   
+2          21.89        29.99    1750                  19421   
+3          23.19        28.99    1750                  15530   
+4          12.94        17.99    1750                  23593   
+
+   TotalPurchaseDollars  TotalSalesQuantity  TotalSalesDollars  \
+0             553563.78              6040.0          132819.60   
+1             482028.23              2632.0           94725.68   
+2             425125.69              3492.0          105105.08   
+3             360140.70              2393.0           71766.07   
+4             305293.42              2039.0           36681.61   
+
+   TotalSalesPrice  TotalExciseTax  FreightCost  GrossProfit  ProfitMargin  \
+0         13567.83        11098.10    257032.07   -420744.18   -316.778683   
+1         19578.56         4835.83     68601.68   -387302.55   -408.867532   
+2         15904.73         6416.21    257032.07   -320020.61   -304.476825   
+3         15714.76         4396.68    144929.24   -288374.63   -401.825863   
+4          7285.95         3746.38    257032.07   -268611.81   -732.279227   
+
+   StockTurnover  SalestoPurchaseRatio   SummaryGeneratedAt  
+0       0.176433              0.239935  2026-11-14 16:35:57  
+1       0.143441              0.196515  2026-11-14 16:35:57  
+2       0.179805              0.247233  2026-11-14 16:35:57  
+3       0.154089              0.199272  2026-11-14 16:35:57  
+4       0.086424              0.120152  2026-11-14 16:35:57  
+2026-11-14 16:35:57,574 - INFO - Ingesting data...
+2026-11-14 16:35:57,717 - INFO - Completed successfully.
+2026-11-14 17:12:49,865 - DEBUG - Using selector: SelectSelector
+2026-11-14 17:12:49,936 - ERROR - No such comm target registered: jupyter.widget.control
+2026-11-14 17:12:49,953 - WARNING - No such comm: d5ae0f20-47e9-4184-b932-cf70b30e1d0b
+2026-11-14 17:12:49,954 - DEBUG - Current comms: []
+2026-11-14 18:19:49,651 - ERROR - No such comm target registered: jupyter.widget.control
+2026-11-14 18:19:49,664 - WARNING - No such comm: faa14a39-4edd-4a92-803f-99b3c1c6face
+2026-11-14 18:19:49,665 - DEBUG - Current comms: []
+2026-11-14 18:19:49,701 - DEBUG - Using selector: SelectSelector
+2026-11-14 21:42:57,050 - ERROR - No such comm target registered: jupyter.widget.control
+2026-11-14 21:42:57,089 - DEBUG - Using selector: SelectSelector
+2026-11-14 21:42:57,508 - WARNING - No such comm: 5f05b783-bcc6-4d99-a2a9-c575ece5902b
+2026-11-14 21:42:57,511 - DEBUG - Current comms: []

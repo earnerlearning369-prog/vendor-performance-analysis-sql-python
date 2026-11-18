@@ -1,0 +1,7 @@
+.ipynb_checkpoints/
+logs/
+data/
+__pycache__/
+logs/.ipynb_chekpoints/ingestion_db_chekpoints.log
+logs/ingestion_db.log
+
